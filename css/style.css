@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Sen, sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: #eb5757;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo img {
+    width: 70px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: black
+}
+
+.shop_card {
+    background: black;
+    width: 38px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.shop_card i {
+    color: white;
+}
+
+.bars i {
+    color: white;
+    font-size: 18px;
+}
+
+
+/*header*/
+
+.header_image {
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url('../img/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg');
+    min-height: 550px;
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+}
+
+.header_text {
+    display: flex;
+    min-height: 550px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header_text h1 {
+    color: #f9f9f9;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.header_text p {
+    margin-bottom: 25px;
+    color: #f9f9f9;
+    font-size: 16px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid white;
+    padding: 4px 17px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+.cont {
+    margin-top: 16px;
+}
+
+button:hover {
+    background: #fff;
+    color: black;
+}
+
+.text p {
+    font-size: 14px;
+}
+
+.support {
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+    background-color: #222;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circle,
+.triangle,
+.rectangle {
+    position: absolute;
+    left: auto;
+    top: auto;
+}
+
+.circle {
+    right: -25%;
+    bottom: -25%;
+}
+
+.triangle {
+    right: -11%;
+    bottom: -17%;
+}
+
+.rectangle {
+    right: -14%;
+    bottom: -31%;
+}
+
+.number {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    right: auto;
+    bottom: auto;
+    color: #f9f9f9;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.title {
+    color: #f9f9f9;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* safe */
+
+.safe_bg {
+    min-height: 550px;
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url('../img/safe.jpg');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+}
+
+.safe_text {
+    display: flex;
+    min-height: 550px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    color: white;
+}
+
+.safe_btn {
+    background: white;
+    color: black;
+    font-size: 17px;
+}
+
+.safe_btn:hover {
+    background: #eb5757;
+    color: white;
+    border: none;
+}
+
+.image img {
+    max-width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.shop_btn {
+    background: #eb5757;
+    font-size: 20px;
+}
+
+.shop_btn:hover {
+    background: black;
+    color: white;
+}
+
+.shop_price {
+    margin-top: 30px;
+}
+
+.shop_price p:nth-child(2) {
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.shop_price p {
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.7;
+    /* text-align: left; */
+}
+
+.del {
+    color: #eb5757;
+    text-decoration: line-through;
+}
+
+.webflow {
+    color: #eb5757;
+    text-decoration: underline;
+}
+
+.product_list {
+    background: black;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    padding: 8px 20px;
+    font-size: 16px;
+}
+
+.product_list:hover {
+    background: #eb5757;
+    color: black;
+    border: none;
+}
+
+footer {
+    background: #222;
+}
+
+.social_site i {
+    padding: 6px;
+    font-size: 24px;
+    margin-right: 10px;
+    color: black;
+    background: white;
+    border-radius: 5px;
+}
+
+.social_site .fa-facebook {
+    padding: 7px 12px;
+}
+
+footer img {
+    width: 100%;
+}
+
+.footer_social_media {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1048px) {
+    label.logo {
+        font-size: 32px;
+    }
+    nav ul {
+        margin-right: 0px;
+    }
+}
+
+
+/* about page */
+
+.bg_image_about {
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url('../img/bg_about.jpg');
+    background-position: 0px 0px, 50% 60%;
+    background-size: auto, cover;
+    min-height: 550px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.about_title_business p:nth-child(1) {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.about_title_business h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.head {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about_content_left {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    right: auto;
+    bottom: 0%;
+    width: 45%;
+    height: 90%;
+    border-radius: 5px;
+    background-image: url('../img/person.jpg');
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
+.home_content_left {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    right: auto;
+    bottom: 0%;
+    width: 45%;
+    height: 90%;
+    border-radius: 5px;
+    background-image: url('../img/4.jpg');
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
+.about_content_right {
+    width: 70%;
+    padding: 90px 55px 90px 245px;
+    border-radius: 5px;
+    background-color: #222;
+    color: #f9f9f9;
+}
+
+.about_container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.user img {
+    width: 200px;
+}
+
+.hero_section {
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url('../img/hello.jpg');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    min-height: 550px;
+    margin-bottom: -55px;
+}
+
+
+/* shop page*/
+
+.shop_header {
+    height: 175px;
+    background-color: #222;
+    color: #f9f9f9;
+}
+
+.shop_header h1 {
+    position: absolute;
+    top: 91px;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 600;
+}
+
+.btn {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+    color: black;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: white;
+}
+
+.btn:hover {
+    color: #f9f9f9;
+    background: black;
+}
+
+.shop_content img {
+    width: 286px;
+    object-fit: cover;
+    height: 400px;
+}
+
+.shop_content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.shop_content div {
+    display: flex;
+    flex-direction: column;
+}
+
+.activeBtn {
+    background: black;
+    color: white;
+}
+
+.create_donate_prica {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 60px 0;
+    margin: 0 auto;
+    width: 50%;
+    padding: 42px;
+}
+
+.create_donate_prica button {
+    margin-bottom: 17px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.donate_title {
+    font-family: Sen, sans-serif;
+    color: #f9f9f9;
+    display: flex;
+    min-height: 550px;
+    align-items: center;
+}
+
+.donate_title h1 {
+    font-weight: 700;
+}
+
+.donate_txt {
+    font-size: 30px;
+}
+
+.donate_bg {
+    min-height: 550px;
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.56), #222), url(../img/donate.jpg)
+}
+
+.header_contatc_right {
+    /* min-width: 600px; */
+    width: 45%;
+    min-height: 550px;
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.56), #222), url(../img/contact.jpg)
+}
+
+.header_contatc_left h1 {
+    font-size: 30px;
+    margin-top: 70px;
+    font-weight: 700;
+}
+
+.header_contact {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #222;
+    color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.header_contact {}
+
+.card_list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card_list .btn_shop {
+    background: #eb5757;
+    font-size: 18px;
+}
+
+.card_contatc,
+.card_support {
+    display: flex;
+    width: 30%;
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #222;
+    text-align: center;
+}
+
+.card_list img {
+    margin-bottom: 37px;
+}
+
+.header_contatc_left {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+
+.card_list .btn_shop:hover {
+    background: black;
+    color: white
+}
+
+.submit {
+    width: 100px;
+    background: #eb5757;
+}
+
+.contact_us_txt p {
+    margin-bottom: 0;
+}
+
+.textarea {
+    height: 46px;
+}
+
+@media (max-width: 991px) {
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #eb5757;
+        top: 58px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    nav ul.show {
+        right: 0;
+    }
+    .cont {
+        margin-top: 0px;
+    }
+    .shop_local_text {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .about_content_left,
+    .home_content_left {
+        background-position: 50% 100%;
+    }
+    .about_content_right {
+        padding-left: 145px;
+    }
+    .about_container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .create_donate_prica {
+        width: 80%
+    }
+    .card_contatc,
+    .card_support {
+        width: 40%;
+    }
+}
+
+@media (max-width:768px) {
+    .header_contatc_left {
+        position: static;
+        padding-bottom: 35px;
+    }
+    .shop_local_text {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .shop_local_section {
+        width: 100%;
+        flex-direction: column;
+    }
+    .social_icon_about {
+        text-align: center
+    }
+    .create_donate_prica {
+        width: 100%
+    }
+    .about_content_left,
+    .home_content_left {
+        position: static;
+        width: 100%;
+        height: 400px;
+        border-radius: 0px;
+    }
+    .about_content_right {
+        width: 100%;
+        padding-right: 45px;
+        padding-left: 45px;
+        border-radius: 0px;
+    }
+    .head {
+        flex-direction: column;
+    }
+    .card_support,
+    .card_contatc {
+        padding: 20px;
+        width: 100%;
+    }
+    .card_support h2 {
+        font-size: 25px
+    }
+    .card_support p {
+        font-size: 13px
+    }
+    .card_support .btn_shop {
+        font-size: 15px
+    }
+    .card_contatc h2 {
+        font-size: 25px
+    }
+    .card_contatc p {
+        font-size: 13px
+    }
+    .card_contatc .btn_shop {
+        font-size: 15px
+    }
+    .header_contatc_right {
+        width: 100%;
+        height: 350px;
+    }
+    nav li {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:600px) {
+    .card_list {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
